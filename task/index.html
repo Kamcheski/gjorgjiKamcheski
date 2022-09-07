@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" href="libs/css/bootstrap.css" />
+</head>
+
+<body>
+  <div>
+    <table class="table table-bordered">
+      <tr>
+        <td colspan="1">API name</td>
+        <td colspan="10" class="text-center">API description</td>
+        <td colspan="1"></td>
+      </tr>
+      <tr>
+        <td colspan="1">1.Timezone</td>
+        <td colspan="10" class="text-center align-middle">Returns date and time for the given latitude and
+          longitude:<br>
+          Latitude:<input type="text" id="timezoneLat" />
+          Longitude:<input type="text" id="timezoneLng" /></td>
+        <td colspan="1"><button class="btn btn-primary" id="timezoneBtn">Submit</button></td>
+      </tr>
+
+
+      <tr>
+        <td colspan="1" scope="row">2.Ocean</td>
+        <td colspan="10" class="text-center align-middle"> Returns ocean name for the given latitude and longitude: <br>
+          Latitude:<input type="text" id="oceanLat" />
+          Longitude:<input type="text" id="oceanLng" /></td>
+        <td colspan="1"><button class="btn btn-primary" id="oceanBtn">Submit</button></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" scope="row">3.Weather</td>
+        <td colspan="10" class="text-center align-middle"> Returns the weather temperature for the given latitude and
+          longitude:
+          <br>
+          Latitude:<input type="text" id="weatherLat" />
+          Longitude:<input type="text" id="weatherLng" />
+        <td colspan="1"><button class="btn btn-primary" id="weatherBtn">Submit</button></td>
+      </tr>
+      <tr>
+
+      </tr>
+    </table>
+  </div>
+
+  <div class="text-center" id="divResults">
+    <p id="result"></p>
+  </div>
+
+
+  <script type="application/javascript" src="libs/js/jquery-3.6.0.min.js"></script>
+  <script type="application/javascript" src="libs/js/script.js"></script>
+
+</body>
+
+</html>
