@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gazetteer</title>
+    <link rel="icon" type="image/x-icon" href="icon/global.png">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="leaflet/leaflet.css">
+    <link rel="stylesheet" href="node_modules/leaflet-easybutton/src/easy-button.css">
+    <link rel="stylesheet" href="node_modules/leaflet.markercluster/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="map"></div>
+    <div class="d-flex justify-content-center">
+        <div class="position-absolute">
+            <select id="dropdownList" class="btn btn-primary btn-sm" type="button" id="dropdownListButton"
+                aria-haspopup="true" data-toggle="dropdown-toggle" aria-expanded="false">
+            </select>
+        </div>
+    </div>
+
+
+    <div class="modal" id="displayFlag" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title " id="modalTitle">Country Flag</h4>
+                </div>
+                <div class="modal-body" id="modalContent">
+                    <img id="flagImg" alt="Flag" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal" id="getInfomodal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title " id="modalTitle">Country Info</h4>
+                </div>
+                <div class="modal-body" id="modalContent">
+                    <table class="table">
+                        <tr>
+                            <td> Continent: </td>
+                            <td id="continent"></td>
+                        </tr>
+                        <tr>
+                            <td> Country: </td>
+                            <td id="country"></td>
+                        </tr>
+                        <tr>
+                            <td> Capital: </td>
+                            <td id="capital"></td>
+                        </tr>
+                        <tr>
+                            <td> Population: </td>
+                            <td id="population"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container py-5 h-100 weather ">
+
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-8 col-lg-6 col-xl-4">
+
+                <div class="card" style="color: #4B515D; background-color: skyblue; border-radius: 35px;">
+                    <div class="card-body p-4">
+
+                        <div class="d-flex">
+                            <h6 id="name" class="flex-grow-1">
+                            </h6>
+                            <h6 id="cc"></h6>
+                        </div>
+
+                        <div class="d-flex flex-column text-center mt-5 mb-4">
+                            <h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;" id="temp"> </h6>
+                            <span id="description" class="small"></span>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1" style="font-size: 1rem;">
+                                <div><i class="fas fa-wind fa-fw"></i> <span class=" ms-1" id="windSpeed"></span>
+                                </div>
+                                <div><i class="fas fa-tint fa-fw"></i> <span class=" ms-1" id="humidity">
+                                    </span>
+                                </div>
+                                <div><i class="fas fa-sun fa-fw"></i> <span class=" ms-1" id="feelslike">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+                    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+                    <script src="leaflet/leaflet.js"></script>
+                    <script src="node_modules/leaflet-easybutton/src/easy-button.js"></script>
+                    <script src="node_modules/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+                    <script src="script.js"> </script>
+</body>
+
+</html>
