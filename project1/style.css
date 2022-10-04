@@ -1,0 +1,26 @@
+body,
+#map {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.modal-content {
+  background-color: skyblue;
+}
+
+.weather {
+  display: none;
+}
+
+#flagImg {
+  width: 100%;
+}
+
+#bodyNews {
+  height: 80vh;
+  overflow-y: auto;
+}
